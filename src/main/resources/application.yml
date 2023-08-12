@@ -1,2 +1,5 @@
 bluesky:
   baseUrl: https://bsky.social/xrpc
+  user:
+    handle: <handle>
+    password: <password>
