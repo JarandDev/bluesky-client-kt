@@ -18,9 +18,14 @@ class BlueskyClientTest {
 
     @Test
     @Disabled("For manual testing")
-    fun `should authenticate`() {
+    fun `should test the application manually`() {
         val blueskyClient = BlueskyClient()
 
-        blueskyClient.authenticate()
+        val user = blueskyClient.authenticate() ?: return println("Failed to authenticate")
+        val feed = blueskyClient.getAuthorFeed(user = user) ?: return println("Failed to get author feed")
+        feed.feed.forEach {
+            println("${it.post.record.createdAt} | ${it.post.author.handle} | ${it.post.record.text}")
+        }
+        println()
     }
 }
