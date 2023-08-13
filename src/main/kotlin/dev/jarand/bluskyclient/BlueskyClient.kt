@@ -3,11 +3,11 @@ package dev.jarand.bluskyclient
 import com.fasterxml.jackson.module.kotlin.readValue
 import dev.jarand.bluskyclient.config.Properties
 import dev.jarand.bluskyclient.config.createObjectMapper
-import dev.jarand.bluskyclient.domain.User
-import dev.jarand.bluskyclient.domain.UserAssembler
+import dev.jarand.bluskyclient.user.domain.User
+import dev.jarand.bluskyclient.user.domain.UserAssembler
 import dev.jarand.bluskyclient.feed.resource.FeedResource
-import dev.jarand.bluskyclient.resource.CreateSessionCredentialsResource
-import dev.jarand.bluskyclient.resource.CreateSessionTokenResource
+import dev.jarand.bluskyclient.authentication.resource.CreateSessionCredentialsResource
+import dev.jarand.bluskyclient.authentication.resource.CreateSessionTokenResource
 import dev.jarand.bluskyclient.util.createGETRequest
 import dev.jarand.bluskyclient.util.createPOSTRequest
 import org.slf4j.LoggerFactory

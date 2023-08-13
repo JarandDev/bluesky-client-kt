@@ -1,4 +1,4 @@
-package dev.jarand.bluskyclient.resource
+package dev.jarand.bluskyclient.authentication.resource
 
 data class CreateSessionCredentialsResource(
     val identifier: String,

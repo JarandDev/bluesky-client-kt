@@ -1,6 +1,6 @@
-package dev.jarand.bluskyclient.domain
+package dev.jarand.bluskyclient.authentication.resource
 
-data class User(
+data class CreateSessionTokenResource(
     val did: String,
     val handle: String,
     val email: String,

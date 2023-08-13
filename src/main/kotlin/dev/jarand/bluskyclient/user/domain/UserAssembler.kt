@@ -1,6 +1,6 @@
-package dev.jarand.bluskyclient.domain
+package dev.jarand.bluskyclient.user.domain
 
-import dev.jarand.bluskyclient.resource.CreateSessionTokenResource
+import dev.jarand.bluskyclient.authentication.resource.CreateSessionTokenResource
 
 class UserAssembler {
 
