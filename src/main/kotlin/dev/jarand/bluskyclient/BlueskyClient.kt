@@ -57,7 +57,7 @@ class BlueskyClient {
         )
         val response = client.send(request, BodyHandlers.ofString())
         if (response.statusCode() != 200) {
-            logger.info("Failed to get author feed for user with handle: ${user.handle} (HTTP Response code: ${response.statusCode()})")
+            logger.error("Failed to get author feed for user with handle: ${user.handle} (HTTP Response code: ${response.statusCode()})")
             return null
         }
         val feedResource = objectMapper.readValue<FeedResource>(response.body())
